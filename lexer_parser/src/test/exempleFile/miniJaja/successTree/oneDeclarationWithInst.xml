@@ -1,0 +1,23 @@
+<Start>
+    <classe>
+        <ident>
+            oneDeclarationWithoutInst
+        </ident>
+        <decls>
+            <var>
+                <entier/>
+                <ident>
+                    a
+                </ident>
+                <nbre>
+                    34
+                </nbre>
+            </var>
+            <vnil/>
+        </decls>
+        <main>
+            <vnil/>
+            <inil/>
+        </main>
+    </classe>
+</Start>

@@ -1,0 +1,6 @@
+class affectation{
+    boolean x;
+    int y;
+    main {}
+}
+

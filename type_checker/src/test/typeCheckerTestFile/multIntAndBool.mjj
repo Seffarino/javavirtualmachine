@@ -1,0 +1,5 @@
+class op{
+
+    int i = 1 * true;
+    main {}
+}

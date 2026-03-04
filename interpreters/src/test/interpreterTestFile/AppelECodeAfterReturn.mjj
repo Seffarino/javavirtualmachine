@@ -1,0 +1,15 @@
+class C {
+    int f(int i,int j){
+        int s=i;
+        int r=j;
+        int z = i+j;
+        return z;
+        write("NO");
+        z++;
+    };
+    main{
+        int q;
+        q=f(4,5);
+        write(q);
+    }
+}

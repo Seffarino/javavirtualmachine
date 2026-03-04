@@ -1,0 +1,13 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du write/writeln	*/
+/************************/
+
+class writeString {
+
+	main {
+        write("bonjour");
+        writeln("bonjour");
+
+	}
+}

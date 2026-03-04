@@ -1,0 +1,14 @@
+class declAfterMain {
+    int x = 1;
+
+    int add(int x1, int y1){
+        return x1 + y1;
+    };
+
+
+    main{
+        
+    }
+    
+    int y = 2;
+}

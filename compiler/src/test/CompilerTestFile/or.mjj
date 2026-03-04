@@ -1,0 +1,4 @@
+class C {
+    boolean i = (true||false);
+    main{}
+}

@@ -1,0 +1,13 @@
+1 init;
+2 push(5);
+3 new(class@stop@int,void,meth,0);
+4 goto(9);
+5 new(class@stop@int@i,entier,var,1);
+6 push(0);
+7 swap;
+8 return;
+9 push(0);
+10 swap;
+11 pop;
+12 pop;
+13 jcstop;

@@ -1,0 +1,33 @@
+<Start>
+    <classe>
+        <ident>
+            affectationAddition
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <var>
+                    <entier/>
+                    <ident>
+                        x
+                    </ident>
+                    <nbre>
+                        5
+                    </nbre>
+                </var>
+                <vnil/>
+            </vars>
+            <instrs>
+                <somme>
+                    <ident>
+                        x
+                    </ident>
+                    <nbre>
+                        5
+                    </nbre>
+                </somme>
+                <inil/>
+            </instrs>
+        </main>
+    </classe>
+</Start>

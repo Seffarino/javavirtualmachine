@@ -1,0 +1,26 @@
+<Start>
+    <classe>
+        <ident>
+            writeString
+        </ident>
+        <vnil/>
+        <main>
+            <vnil/>
+            <instrs>
+                <ecrire>
+                    <chaine>
+                        "bonjour"
+                    </chaine>
+                </ecrire>
+                <instrs>
+                    <ecrireln>
+                        <chaine>
+                            "bonjour"
+                        </chaine>
+                    </ecrireln>
+                    <inil/>
+                </instrs>
+            </instrs>
+        </main>
+    </classe>
+</Start>

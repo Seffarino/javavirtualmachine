@@ -1,0 +1,11 @@
+1 init;
+2 push(5);
+3 newarray(class@i,entier);
+4 push(3);
+5 push(4);
+6 ainc(class@i);
+7 push(0);
+8 swap;
+9 pop;
+10 pop;
+11 jcstop;

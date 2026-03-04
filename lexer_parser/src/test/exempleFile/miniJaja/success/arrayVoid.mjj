@@ -1,0 +1,11 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des tableaux	*/
+/************************/
+
+class arrayVoid {
+
+	main {
+        void t[16];
+	}
+}

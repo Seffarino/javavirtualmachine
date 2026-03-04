@@ -1,0 +1,14 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation de l'addition */
+/****************************************/
+/* Test de l'addition
+*/
+
+class operationAdd{ 
+
+    
+    main {
+       int x = 5 + 5; 
+    }
+}

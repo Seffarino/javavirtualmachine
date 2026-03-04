@@ -1,0 +1,9 @@
+1 init;
+2 push(5);
+3 neg;
+4 new(class@i,entier,var,0);
+5 push(0);
+6 swap;
+7 pop;
+8 pop;
+9 jcstop;

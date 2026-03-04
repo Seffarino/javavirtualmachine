@@ -1,0 +1,11 @@
+class C {
+    int i = 5;
+    main{
+        int j = 6;
+        boolean k = false;
+        writeln(i);
+        writeln(j);
+        writeln(k);
+        writeln("toto");
+    }
+}

@@ -1,0 +1,15 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation de l'affectation */
+/****************************************/
+/* Test du "+=" */
+
+
+class affectationAddition{ 
+
+    
+    main {
+        int x = 5;
+        x += 5 ;
+    }
+}

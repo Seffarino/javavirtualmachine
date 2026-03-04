@@ -1,0 +1,9 @@
+class C {
+    void f(int i,boolean j){
+        writeln(i);
+        writeln(j);
+    };
+    main{
+        f(10,false);
+    }
+}

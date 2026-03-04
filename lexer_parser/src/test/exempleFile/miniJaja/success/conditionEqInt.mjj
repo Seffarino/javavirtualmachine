@@ -1,0 +1,18 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation des conditions */
+/****************************************/
+/* Test de l'egalite "==" avec des entiers
+*/
+
+class conditionEt{ 
+
+    
+    main {
+        int x = 5;
+        int y = 6;
+        if(x == y){
+
+       };
+    }
+}

@@ -1,0 +1,5 @@
+class C {
+    boolean b = (1==1);
+    main{}
+
+}

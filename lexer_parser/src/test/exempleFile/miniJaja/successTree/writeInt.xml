@@ -1,0 +1,37 @@
+<Start>
+    <classe>
+        <ident>
+            writeInt
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <var>
+                    <entier/>
+                    <ident>
+                        x
+                    </ident>
+                    <nbre>
+                        5
+                    </nbre>
+                </var>
+                <vnil/>
+            </vars>
+            <instrs>
+                <ecrire>
+                    <ident>
+                        x
+                    </ident>
+                </ecrire>
+                <instrs>
+                    <ecrireln>
+                        <ident>
+                            x
+                        </ident>
+                    </ecrireln>
+                    <inil/>
+                </instrs>
+            </instrs>
+        </main>
+    </classe>
+</Start>

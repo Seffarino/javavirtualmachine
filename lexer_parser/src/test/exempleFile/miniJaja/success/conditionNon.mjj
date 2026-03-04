@@ -1,0 +1,17 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation des conditions */
+/****************************************/
+/* Test du non "!"
+*/
+
+class conditionNon{ 
+
+    
+    main {
+        boolean test = true;
+       if(!test){
+
+       };
+    }
+}

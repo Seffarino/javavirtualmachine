@@ -1,0 +1,6 @@
+class C {
+    boolean i = false;
+    main{
+        i+=i;
+    }
+}

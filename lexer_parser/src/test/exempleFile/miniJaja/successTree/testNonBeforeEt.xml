@@ -1,0 +1,26 @@
+<Start>
+    <classe>
+        <ident>
+            test
+        </ident>
+        <decls>
+            <var>
+                <bool/>
+                <ident>
+                    t
+                </ident>
+                <et>
+                    <non>
+                        <vrai/>
+                    </non>
+                    <faux/>
+                </et>
+            </var>
+            <vnil/>
+        </decls>
+        <main>
+            <vnil/>
+            <inil/>
+        </main>
+    </classe>
+</Start>

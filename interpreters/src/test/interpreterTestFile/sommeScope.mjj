@@ -1,0 +1,8 @@
+class C {
+    int i= 2;
+    main {
+        i+=5;
+        write(i);
+    }
+
+}

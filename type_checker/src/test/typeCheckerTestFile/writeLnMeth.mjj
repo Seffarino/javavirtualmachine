@@ -1,0 +1,7 @@
+class C {
+
+    int b(){};
+    main{
+        writeln(b);
+    }
+}

@@ -1,0 +1,9 @@
+class C{
+
+    void i(int i ,boolean j ){
+        i++;
+    };
+    main{
+        i(5,false);
+    }
+}

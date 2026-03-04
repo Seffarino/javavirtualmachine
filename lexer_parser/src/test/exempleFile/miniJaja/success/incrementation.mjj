@@ -1,0 +1,15 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation de l'incrémentation */
+/****************************************/
+/* Test du "++" */
+
+
+class incrementation{ 
+
+    
+    main {
+        int x = 5;
+        x++;
+    }
+}

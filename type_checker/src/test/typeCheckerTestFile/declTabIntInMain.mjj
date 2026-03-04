@@ -1,0 +1,5 @@
+class affecatation{
+    main{
+        int t[5];
+    }
+}

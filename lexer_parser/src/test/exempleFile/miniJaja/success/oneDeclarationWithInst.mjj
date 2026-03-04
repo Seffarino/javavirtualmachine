@@ -1,0 +1,7 @@
+class oneDeclarationWithoutInst{
+    int a = 34;
+
+    main{
+        
+    }
+}

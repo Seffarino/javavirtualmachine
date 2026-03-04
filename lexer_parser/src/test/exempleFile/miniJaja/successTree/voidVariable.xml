@@ -1,0 +1,23 @@
+<Start>
+    <classe>
+        <ident>
+            Test
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <var>
+                    <rien/>
+                    <ident>
+                        x
+                    </ident>
+                    <nbre>
+                        4
+                    </nbre>
+                </var>
+                <vnil/>
+            </vars>
+            <inil/>
+        </main>
+    </classe>
+</Start>

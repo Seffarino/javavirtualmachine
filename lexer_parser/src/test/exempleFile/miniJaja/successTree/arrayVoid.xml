@@ -1,0 +1,23 @@
+<Start>
+    <classe>
+        <ident>
+            arrayVoid
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <tableau>
+                    <rien/>
+                    <ident>
+                        t
+                    </ident>
+                    <nbre>
+                        16
+                    </nbre>
+                </tableau>
+                <vnil/>
+            </vars>
+            <inil/>
+        </main>
+    </classe>
+</Start>

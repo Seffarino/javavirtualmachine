@@ -1,0 +1,3 @@
+1 newarray(t,entier);
+2 newarray(t,booleen);
+3 newarray(t,void);

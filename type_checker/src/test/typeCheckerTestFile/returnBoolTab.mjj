@@ -1,0 +1,7 @@
+class C {
+    boolean f(){
+        boolean i[5];
+        return i;
+    };
+    main{}
+}

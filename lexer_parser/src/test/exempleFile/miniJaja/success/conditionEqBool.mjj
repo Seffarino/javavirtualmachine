@@ -1,0 +1,19 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation des conditions */
+/****************************************/
+/* Test de l'egalite "==" avec des entiers
+*/
+
+class conditionEt{ 
+
+    
+    main {
+
+        boolean test = true;
+        boolean test2 = false;
+        if(test == test2){
+
+       };
+    }
+}

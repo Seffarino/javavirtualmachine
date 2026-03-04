@@ -1,0 +1,17 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des attributs	*/
+/************************/
+
+class afterMain{
+
+
+	main {
+
+	}
+    
+    int x;
+    int y = 5;
+    boolean a = true;
+    boolean b;
+}

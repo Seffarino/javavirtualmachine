@@ -1,0 +1,5 @@
+class methode{
+
+    void f(){};
+    main{}
+}

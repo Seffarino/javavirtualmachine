@@ -1,0 +1,8 @@
+class C {
+    int affect(int i){
+        return i;
+    };
+    main{
+        int i = affect(4);
+    }
+}

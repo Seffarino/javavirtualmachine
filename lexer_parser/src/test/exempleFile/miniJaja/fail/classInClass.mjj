@@ -1,0 +1,10 @@
+class classInClass {
+
+    class childClass{
+
+    }
+
+    main{
+
+    }
+}

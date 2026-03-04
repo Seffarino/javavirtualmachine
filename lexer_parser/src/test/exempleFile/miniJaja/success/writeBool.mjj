@@ -1,0 +1,14 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du write/writeln	*/
+/************************/
+
+class writeBool {
+
+	main {
+        boolean x = true;
+        write(x);
+        writeln(x);
+
+	}
+}

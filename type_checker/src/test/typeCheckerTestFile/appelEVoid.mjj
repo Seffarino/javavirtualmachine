@@ -1,0 +1,6 @@
+class C {
+    int i = f(true);
+
+    void f(boolean i){};
+    main{}
+}

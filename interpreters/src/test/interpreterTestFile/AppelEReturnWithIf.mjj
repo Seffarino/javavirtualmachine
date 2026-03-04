@@ -1,0 +1,16 @@
+class C {
+    int f(int i,int j){
+        int s=i;
+        int r=j;
+        if(i>5){
+            return s+r;
+        }else{
+            return i;
+        };
+    };
+    main{
+        int q;
+        q=f(4,5);
+        write(q);
+    }
+}

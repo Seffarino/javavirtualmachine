@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>fr.ufrst.m1info.comp5</groupId>
+        <artifactId>JajaVirtualMachine</artifactId>
+        <version>2.2-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>interpreters</artifactId>
+    <version>2.2-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>interpreters</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>fr.ufrst.m1info.comp5</groupId>
+            <artifactId>lexer_parser</artifactId>
+            <version>2.2-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>fr.ufrst.m1info.comp5</groupId>
+            <artifactId>Memory</artifactId>
+            <version>2.2-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>fr.ufrst.m1info.comp5</groupId>
+            <artifactId>type_checker</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>fr.ufrst.m1info.comp5</groupId>
+            <artifactId>compiler</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>fr.ufrst.m1info.comp5</groupId>
+            <artifactId>type_checker</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>fr.ufrst.m1info.comp5</groupId>
+            <artifactId>type_checker</artifactId>
+        </dependency>
+    </dependencies>
+</project>

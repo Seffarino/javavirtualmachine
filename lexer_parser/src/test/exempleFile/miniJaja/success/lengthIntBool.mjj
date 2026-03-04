@@ -1,0 +1,15 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du length	*/
+/************************/
+
+class lengthIntBool {
+
+	main {
+                int x = 5;
+                int z = length(x);
+                boolean y = true;
+                int r = length(y);
+
+	}
+}

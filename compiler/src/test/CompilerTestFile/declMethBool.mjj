@@ -1,0 +1,8 @@
+class C {
+    boolean j = false;
+    boolean stop(boolean i){
+        j = i;
+        return j;
+    };
+    main{}
+}

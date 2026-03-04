@@ -1,0 +1,14 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation de la soustraction */
+/****************************************/
+/* Test de la soustraction
+*/
+
+class operationSous{ 
+
+    
+    main {
+       int x = 5 - 5; 
+    }
+}

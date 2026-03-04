@@ -1,0 +1,6 @@
+class C {
+    main{
+        boolean b = false;
+        writeln(b);
+    }
+}

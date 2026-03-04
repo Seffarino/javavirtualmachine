@@ -1,0 +1,12 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des tableaux	*/
+/************************/
+
+class arrayBool {
+
+	main {
+        boolean t[16];
+        boolean y = t[1];
+	}
+}

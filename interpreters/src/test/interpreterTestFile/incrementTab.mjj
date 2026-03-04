@@ -1,0 +1,31 @@
+class C {
+    int tab[5];
+
+    void initTab(){
+        int taille = length(tab);
+        int i = 0;
+        while(taille>i){
+            tab[i] = i;
+            i++;
+        };
+        i=0;
+        while(taille>i){
+            tab[i]++;
+            i++;
+        };
+    };
+    main{
+        int i;
+        initTab();
+        i=tab[0];
+        writeln(i);
+        i=tab[1];
+        writeln(i);
+        i=tab[2];
+        writeln(i);
+        i=tab[3];
+        writeln(i);
+        i=tab[4];
+        writeln(i);
+    }
+}

@@ -1,0 +1,14 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation de la multiplication */
+/****************************************/
+/* Test de la multiplication
+*/
+
+class operationMult{ 
+
+    
+    main {
+       int x = 5 * 5; 
+    }
+}

@@ -1,0 +1,12 @@
+1 init;
+2 push(0);
+3 new(class@i,entier,cst,0);
+4 push(false);
+5 new(class@j,booleen,cst,0);
+6 push(0);
+7 swap;
+8 pop;
+9 swap;
+10 pop;
+11 pop;
+12 jcstop;

@@ -1,0 +1,17 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du while	*/
+/************************/
+
+class whileFull {
+
+	main {
+        int x = 0;
+        while(true){
+            x++;
+            x = x - 1;
+            x = x * 1 ;
+        };
+
+	}
+}

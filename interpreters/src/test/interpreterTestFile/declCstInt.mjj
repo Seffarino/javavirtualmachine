@@ -1,0 +1,10 @@
+class C {
+    final int i = 4;
+    final int j = -5;
+    final int k = 455555;
+    main{
+        writeln(i);
+        writeln(j);
+        writeln(k);
+    }
+}

@@ -1,0 +1,5 @@
+class affectation {
+    int t[5];
+    int t;
+    main{}
+}

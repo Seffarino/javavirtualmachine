@@ -1,0 +1,9 @@
+class mainNotFinal {
+    int x = 1;
+
+    void main(){
+        int z = add(x, 1);
+    }
+
+    int y = 2;
+}

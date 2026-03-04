@@ -1,0 +1,13 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des methodes	*/
+/************************/
+
+class methMissingBody{
+
+    int myMeth(int x, boolean y);
+
+	main {
+
+	}
+}

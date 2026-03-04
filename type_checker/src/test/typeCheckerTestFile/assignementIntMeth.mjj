@@ -1,0 +1,7 @@
+class C {
+    int i;
+    void j(){};
+    main{
+        j=i;
+    }
+}

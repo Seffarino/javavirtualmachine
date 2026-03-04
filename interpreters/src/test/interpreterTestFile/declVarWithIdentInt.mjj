@@ -1,0 +1,8 @@
+class C {
+    int i = 4;
+    int j = i;
+    main{
+        writeln(i);
+        writeln(j);
+    }
+}

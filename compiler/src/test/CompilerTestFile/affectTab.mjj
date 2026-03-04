@@ -1,0 +1,6 @@
+class C {
+    int i[5];
+    main{
+        i[0] = 1;
+    }
+}

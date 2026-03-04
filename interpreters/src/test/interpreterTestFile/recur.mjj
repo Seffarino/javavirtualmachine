@@ -1,0 +1,33 @@
+class C {
+  int x;
+
+int f(int i, int j) {
+int res = 0;
+if (j > i) {
+	res = f(1,i);
+}
+ else {res = i;};
+return res;
+};
+
+int g(int i, int j) {
+int res = 0;
+if (j > i) {
+        res = g(j,2);
+}
+ else {res = j;};
+return res;
+};
+
+void pause() {};
+ main {
+ x = f(2,5);
+ writeln(x);
+ pause();
+ x = g(2,5);
+ pause();
+ writeln(x);
+}}
+
+
+

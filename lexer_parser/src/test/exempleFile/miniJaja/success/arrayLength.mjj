@@ -1,0 +1,12 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des tableaux	*/
+/************************/
+
+class arrayLength {
+
+	main {
+        int t[length(t)];
+
+	}
+}

@@ -1,0 +1,5 @@
+class methode{
+
+    int f(int i,boolean x){return 0;};
+    main{}
+}

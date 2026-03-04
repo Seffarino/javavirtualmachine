@@ -1,0 +1,8 @@
+class affectation{
+    int i;
+
+    main{
+        int i;
+    }
+
+}

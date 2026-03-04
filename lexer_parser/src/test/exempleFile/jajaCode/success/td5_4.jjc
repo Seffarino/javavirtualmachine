@@ -1,0 +1,14 @@
+1 load(x);
+2 push(3);
+3 sup;
+4 not;
+5 if(14);
+6 push(2);
+7 load(x);
+8 mul;
+9 inc(y);
+10 load(x);
+11 push(1);
+12 sub;
+13 store(x);
+14 goto(1);

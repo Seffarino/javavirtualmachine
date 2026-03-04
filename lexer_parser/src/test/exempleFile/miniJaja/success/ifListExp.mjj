@@ -1,0 +1,14 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du if	*/
+/************************/
+
+class arrayInt {
+
+	main {
+        int x = 5;
+        if(x(5,2,3*3,5&&2)){
+            
+        };
+	}
+}

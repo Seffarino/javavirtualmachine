@@ -1,0 +1,28 @@
+<Start>
+    <classe>
+        <ident>
+            operationSous
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <var>
+                    <entier/>
+                    <ident>
+                        x
+                    </ident>
+                    <soustraction>
+                        <nbre>
+                            5
+                        </nbre>
+                        <nbre>
+                            5
+                        </nbre>
+                    </soustraction>
+                </var>
+                <vnil/>
+            </vars>
+            <inil/>
+        </main>
+    </classe>
+</Start>

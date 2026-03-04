@@ -1,0 +1,15 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des methodes	*/
+/************************/
+
+class methNoArgs{
+
+    void myMeth(){
+        int a = 5;
+    };
+
+	main {
+
+	}
+}

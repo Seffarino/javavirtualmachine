@@ -1,0 +1,14 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation de la division */
+/****************************************/
+/* Test de la division
+*/
+
+class operationDiv{ 
+
+    
+    main {
+       int x = 10 / 2; 
+    }
+}

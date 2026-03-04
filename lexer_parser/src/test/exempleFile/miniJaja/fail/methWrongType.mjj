@@ -1,0 +1,16 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des methodes	*/
+/************************/
+
+class methWrongType{
+
+    double myMeth(int x, boolean y){
+        int a = 5;
+
+    };
+
+	main {
+
+	}
+}

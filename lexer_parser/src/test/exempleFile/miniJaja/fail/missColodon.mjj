@@ -1,0 +1,8 @@
+class missColodon {
+    int x = 0;
+    int y = 34
+
+    main(){
+        
+    }
+}

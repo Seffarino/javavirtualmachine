@@ -1,0 +1,11 @@
+class A {
+    int f(){
+        int x = 4;
+        x++;
+        return x;
+    };
+
+    main{
+        int x = f();
+    }
+}

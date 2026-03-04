@@ -1,0 +1,11 @@
+class oneFuntionVoidWithInstrs {
+    void f(){
+        int x = 1;
+        x++;
+    };
+
+    main{
+        int abcde = 3 / a;
+        f();
+    }
+}

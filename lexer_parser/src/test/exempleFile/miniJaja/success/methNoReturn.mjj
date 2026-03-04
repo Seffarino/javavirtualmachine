@@ -1,0 +1,17 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des methodes	*/
+/************************/
+
+class methNoReturn{
+
+    int myMeth(int x, boolean y){
+        int a = 5;
+        x++;
+        y = false; 
+    };
+
+	main {
+
+	}
+}

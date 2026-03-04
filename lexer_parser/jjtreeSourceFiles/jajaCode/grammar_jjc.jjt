@@ -1,0 +1,234 @@
+options {
+    VISITOR=true;
+    MULTI=true;
+    NODE_DEFAULT_VOID=true;
+    NODE_PREFIX = "ASTJJC";
+    STATIC = false;
+    KEEP_LINE_COLUMN = true;
+    TRACK_TOKENS = true;
+}
+
+PARSER_BEGIN(JajaCodeAnalyser)
+package fr.ufrst.m1info.comp5.jajacode;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class JajaCodeAnalyser{
+
+
+    /*public static void main(String[] args) throws ParseException {
+        System.out.println("Syntax check: ");
+        JajaCodeAnalyser b = new JajaCodeAnalyser(new java.io.StringReader(args[0]));
+        try {
+            System.out.println("Syntax is okay");
+            ASTJJCStart root = b.B();
+            root.dump("");
+        } catch (Throwable e) {
+            // Catching Throwable is ugly but JavaCC throws Error objects!
+            System.out.println("Syntax check failed: " + e.getMessage());
+            // Exit with error code
+        }
+    }*/
+
+    static public ASTJJCStart parseFromFile(String file) throws FileNotFoundException, ParseException{
+        FileInputStream inputStream = new FileInputStream(file);
+        JajaCodeAnalyser t = new JajaCodeAnalyser(inputStream);
+        return t.B();
+    }
+
+    static public ASTJJCStart parseFromString(String str) throws ParseException {
+        JajaCodeAnalyser t = new JajaCodeAnalyser(new java.io.StringReader(str));
+        return t.B();
+    }
+}
+
+PARSER_END(JajaCodeAnalyser)
+
+SKIP:  { " " | "\t" | "\n" | "\r" | <"//" (~["\n", "\r"])*> | <"/*" ( ~[] | "\n" )* "*/" >}
+TOKEN: {
+    < INIT : "init">           
+    | < NEW : "new" >  
+    | < SWAP : "swap" >           
+    | < NEWARRAY : "newarray" >   
+    | < INVOKE : "invoke" >   
+    | < RETURN : "return" > 
+    | < PUSH : "push" >     
+    | < POP : "pop" >
+    | < LOAD : "load" >
+    | < ALOAD : "aload" >
+    | < STORE : "store" >
+    | < ASTORE : "astore" >
+    | < WRITE : "write" >
+    | < WRITELN : "writeln" >
+    | < LENGTH : "length" >
+    | < IF : "if" >
+    | < GOTO : "goto" >
+    | < INC  : "inc" >
+    | < AINC : "ainc" >
+    | < OPER : "oper" >
+    | < NOP : "nop" >
+    | < JCSTOP : "jcstop" >
+
+    | < NEG : "neg" >
+    | < NOT : "not" >
+    | < ADD : "add" >
+    | < SUB : "sub" >
+    | < MUL : "mul" >
+    | < DIV : "div" >
+    | < CMP : "cmp" >
+    | < SUP : "sup" >
+    | < OR : "or" >
+    | < AND : "and" >
+    | < TRUE : "true" >
+    | < FALSE : "false" >
+    | < JCT : "jcvrai" >
+    | < JCF : "jcfaux" >
+    | < VRAI : "vrai" >
+    | < FAUX : "faux" >
+
+    | <ENTIER : "entier">
+    | <BOOL : "booleen">
+    | <VOID : "void">
+    | <VAR : "var">
+    | <METH : "meth">
+    | <CST : "cst" >
+    | < SEMI : ";" >
+    | < COMA : "," >
+    | < PARO : "(" > 
+    | < PARF : ")" > 
+    | < NUMBER : (["0"-"9"])+ ("." (["0"-"9"])+)? > 
+    | < IDENT : ["a"-"z", "A"-"Z", "à"-"ö", "ô"-"ÿ"](["a"-"z", "A"-"Z", "0"-"9", "_", "à"-"ö", "ô"-"ÿ","@"])* >
+    | < STRING : "\"" ( ~["\""] )* "\"" >
+}
+
+ASTJJCStart B() #Start : {} { INSTRS() { return jjtThis; }}
+
+void INSTRS() #instrs : {} {
+    ( INSTR() )+ | JCNIL()
+}
+
+void INSTR() : {} {
+    ADDRESS() COMMAND() <SEMI> #instr(2)
+}
+
+
+void COMMAND() : {} {
+    <INIT> #init
+    | <SWAP> #swap
+    | <NEW> <PARO> IDENT() <COMA> TYPE() <COMA> SORTE() <COMA> VAL() <PARF> #New(4)
+    | <NEWARRAY> <PARO> IDENT() <COMA> TYPE() <PARF> #newarray(2)
+    | <INVOKE> <PARO> IDENT() <PARF> #invoke(1)
+    | <RETURN> #Return
+    | <PUSH> <PARO> VAL() <PARF> #push(1)
+    | <POP> #pop
+    | <LOAD> <PARO> IDENT() <PARF> #load(1)
+    | <ALOAD> <PARO> IDENT() <PARF> #aload(1)
+    | <STORE> <PARO> IDENT() <PARF> #store(1)
+    | <ASTORE> <PARO> IDENT() <PARF> #astore(1)
+    | <WRITE> #write
+    | <WRITELN> #writeln
+    | <LENGTH> <PARO> IDENT() <PARF> #length(1)
+    | <IF> <PARO> ADDRESS() <PARF> #If(1)
+    | <GOTO> <PARO> ADDRESS() <PARF> #Goto(1)
+    | <INC> <PARO> IDENT() <PARF> #inc(1)
+    | <AINC> <PARO> IDENT() <PARF> #ainc(1)
+    | OPER() #oper
+    | <NOP> #nop
+    | <JCSTOP> #jcstop
+}
+void IDENT() #jcident : {} {
+    <IDENT>{ jjtThis.jjtSetValue(token.image); }
+}
+
+void VAL(): {} {
+    NUM() 
+    | VRAI()
+    | FAUX()
+    | jcString()
+    | JCNIL() 
+}
+
+void jcString() #jcstring : {} {
+
+    <IDENT> { jjtThis.jjtSetValue(token.image); }
+    | <STRING> { jjtThis.jjtSetValue(token.image); }
+}
+
+void VRAI() #jcvrai : { boolean x = true; } {
+   ( <VRAI> | <JCT> | <TRUE> ) {
+    	try {
+    		x = Boolean.parseBoolean(token.image);
+        } catch (Exception e) {
+        	System.err.println("Error occured : " + token.image);
+        }
+        jjtThis.jjtSetValue(x);
+    }
+}
+
+void FAUX() #jcfaux : { boolean x = true; } {
+    ( <FAUX> | <JCF> | <FALSE> ) {
+    	try {
+    		x = Boolean.parseBoolean(token.image);
+        } catch (Exception e) {
+        	System.err.println("Error occured : " + token.image );
+        }
+        jjtThis.jjtSetValue(x);
+    }
+}
+
+void ADDRESS() #jcadress: {int x = 0;} {
+    <NUMBER>{
+        try {
+            x = Integer.parseInt(token.image);
+        } catch (NumberFormatException ee) {
+            System.err.println("Error occured : " + token.image);
+        }
+        jjtThis.jjtSetValue(x);
+    }
+}
+
+void NUM() #jcnbre : { int x = 0; } {
+    <NUMBER> {
+    	try {
+    		x = Integer.parseInt(token.image);
+        } catch (NumberFormatException ee) {
+        	System.err.println("Error occured : " + token.image);
+        }
+        jjtThis.jjtSetValue(x);
+    }
+}
+
+void OPER() : {} {
+    OPER2() | OPER1()
+}
+
+void OPER1() : {} {
+    <NEG> #neg
+    | <NOT> #not
+}
+
+void OPER2() : {} {
+    <ADD> #add
+    | <SUB> #sub
+    | <MUL> #mul
+    | <DIV> #div
+    | <CMP> #cmp
+    | <SUP> #sup 
+    | <OR> #or 
+    | <AND> #and
+}
+
+void SORTE() #jcsorte: {} {
+    <VAR> { jjtThis.jjtSetValue(token.image); }
+    | <METH> { jjtThis.jjtSetValue(token.image); }
+    | <CST> { jjtThis.jjtSetValue(token.image); }
+}
+
+void TYPE() #jctype: {} {
+    <ENTIER> { jjtThis.jjtSetValue(token.image); }
+    | <BOOL> { jjtThis.jjtSetValue(token.image); }
+    | <VOID> { jjtThis.jjtSetValue(token.image); }
+}
+
+
+void JCNIL()#jcnil : {} {{}}

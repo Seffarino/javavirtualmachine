@@ -1,0 +1,12 @@
+class C {
+    int i = 4+1;
+    int j = -5-4;
+    int k = 3*8;
+    int h = 4/2;
+    main{
+        writeln(i);
+        writeln(j);
+        writeln(k);
+        writeln(h);
+    }
+}

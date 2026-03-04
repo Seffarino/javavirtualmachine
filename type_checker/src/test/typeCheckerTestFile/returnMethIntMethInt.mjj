@@ -1,0 +1,9 @@
+class C {
+    int f(){
+        return f2;
+    };
+    int f2(){
+        return f;
+    };
+    main{}
+}

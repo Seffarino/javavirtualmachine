@@ -1,0 +1,25 @@
+<Start>
+    <classe>
+        <ident>
+            arrayNegative
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <tableau>
+                    <entier/>
+                    <ident>
+                        t
+                    </ident>
+                    <moins>
+                        <nbre>
+                            16
+                        </nbre>
+                    </moins>
+                </tableau>
+                <vnil/>
+            </vars>
+            <inil/>
+        </main>
+    </classe>
+</Start>

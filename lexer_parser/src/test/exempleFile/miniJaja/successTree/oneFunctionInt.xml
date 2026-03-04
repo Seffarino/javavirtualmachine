@@ -1,0 +1,23 @@
+<Start>
+    <classe>
+        <ident>
+            A
+        </ident>
+        <decls>
+            <methode>
+                <entier/>
+                <ident>
+                    f
+                </ident>
+                <enil/>
+                <vnil/>
+                <inil/>
+            </methode>
+            <vnil/>
+        </decls>
+        <main>
+            <vnil/>
+            <inil/>
+        </main>
+    </classe>
+</Start>

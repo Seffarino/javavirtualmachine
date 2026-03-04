@@ -1,0 +1,44 @@
+class C {
+    boolean iTrue = 2 > 1;
+    boolean iFalse = 1 > 2;
+
+    boolean jTrue = 2 == 2;
+    boolean jFalse = 2 == -1;
+
+    boolean kTrue1 = (2>1 || 1>2);
+    boolean kTrue2 = (1>2 || 2>1);
+    boolean kFalse = (1>2 || 2>3);
+
+    boolean hTrue = ( 2>1 && 3>2);
+    boolean hFalse1= ( 2>1 && 1>2);
+    boolean hFalse2= ( 1>2 && 2>1);
+
+    boolean lTrue = !(1 > 2);
+    boolean lFalse= !(2 > 1);
+
+    main{
+        write(iTrue);
+        write(",");
+        write(iFalse);
+        write(",");
+        write(jTrue);
+        write(",");
+        write(jFalse);
+        write(",");
+        write(kTrue1);
+        write(",");
+        write(kTrue2);
+        write(",");
+        write(kFalse);
+        write(",");
+        write(hTrue);
+        write(",");
+        write(hFalse1);
+        write(",");
+        write(hFalse2);
+        write(",");
+        write(lTrue);
+        write(",");
+        write(lFalse);
+    }
+}

@@ -1,0 +1,6 @@
+class affectation {
+
+    int i = true;
+    main{}
+
+}

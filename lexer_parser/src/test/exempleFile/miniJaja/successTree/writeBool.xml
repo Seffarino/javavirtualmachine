@@ -1,0 +1,35 @@
+<Start>
+    <classe>
+        <ident>
+            writeBool
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <var>
+                    <bool/>
+                    <ident>
+                        x
+                    </ident>
+                    <vrai/>
+                </var>
+                <vnil/>
+            </vars>
+            <instrs>
+                <ecrire>
+                    <ident>
+                        x
+                    </ident>
+                </ecrire>
+                <instrs>
+                    <ecrireln>
+                        <ident>
+                            x
+                        </ident>
+                    </ecrireln>
+                    <inil/>
+                </instrs>
+            </instrs>
+        </main>
+    </classe>
+</Start>

@@ -1,0 +1,12 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des tableaux	*/
+/************************/
+
+class arrayInt {
+
+	main {
+        int t[16];
+        int y = t[2];
+	}
+}

@@ -1,0 +1,18 @@
+<Start>
+    <classe>
+        <ident>
+            whileEmptyBody
+        </ident>
+        <vnil/>
+        <main>
+            <vnil/>
+            <instrs>
+                <tantque>
+                    <vrai/>
+                    <inil/>
+                </tantque>
+                <inil/>
+            </instrs>
+        </main>
+    </classe>
+</Start>

@@ -1,0 +1,10 @@
+class C {
+
+    int b(){
+        return 0;
+    };
+    main{
+        final int i = 3;
+        writeln(i);
+    }
+}

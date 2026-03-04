@@ -1,0 +1,34 @@
+<Start>
+    <classe>
+        <ident>
+            methNoArgs
+        </ident>
+        <decls>
+            <methode>
+                <rien/>
+                <ident>
+                    myMeth
+                </ident>
+                <enil/>
+                <vars>
+                    <var>
+                        <entier/>
+                        <ident>
+                            a
+                        </ident>
+                        <nbre>
+                            5
+                        </nbre>
+                    </var>
+                    <vnil/>
+                </vars>
+                <inil/>
+            </methode>
+            <vnil/>
+        </decls>
+        <main>
+            <vnil/>
+            <inil/>
+        </main>
+    </classe>
+</Start>

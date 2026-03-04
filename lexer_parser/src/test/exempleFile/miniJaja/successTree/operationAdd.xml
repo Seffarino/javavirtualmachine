@@ -1,0 +1,28 @@
+<Start>
+    <classe>
+        <ident>
+            operationAdd
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <var>
+                    <entier/>
+                    <ident>
+                        x
+                    </ident>
+                    <addition>
+                        <nbre>
+                            5
+                        </nbre>
+                        <nbre>
+                            5
+                        </nbre>
+                    </addition>
+                </var>
+                <vnil/>
+            </vars>
+            <inil/>
+        </main>
+    </classe>
+</Start>

@@ -1,0 +1,7 @@
+class C {
+    int f(){
+        int i[5];
+        return i;
+    };
+    main{}
+}

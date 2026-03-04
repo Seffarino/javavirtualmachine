@@ -1,0 +1,17 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation du type booleen */
+/****************************************/
+/* Test de la methode de type booleen
+*/
+
+class methBoolean{ 
+
+    boolean test(){
+        return true;
+    };
+
+    main {
+    
+    }
+}

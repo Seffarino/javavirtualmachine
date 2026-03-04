@@ -1,0 +1,11 @@
+class C {
+    main{
+        int i = 0;
+        if(false){
+            i = 1;
+        }else{
+            i = 2;
+        };
+        write(i);
+    }
+}

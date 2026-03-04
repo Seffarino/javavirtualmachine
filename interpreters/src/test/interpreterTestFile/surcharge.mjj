@@ -1,0 +1,36 @@
+class Sur {
+  int x;
+
+int f(int i, int j) {
+if (j > i) {
+	return f(1,i);
+}
+ else {return i;};
+};
+
+int f(int i) {
+	return i;
+};
+
+int f(boolean b) {
+if (b) {
+	return 1;
+}
+ else {return 2;};
+};
+
+
+void pause() {};
+
+ main {
+ x = f(2,5);
+ writeln(x);
+ x = f(2);
+ writeln(x);
+ pause();
+ x = f(true);
+ writeln(x);
+ pause();
+
+}}
+

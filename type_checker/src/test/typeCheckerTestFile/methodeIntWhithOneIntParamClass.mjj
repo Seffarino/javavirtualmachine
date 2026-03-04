@@ -1,0 +1,5 @@
+class methode{
+
+    int f(int i){return 0;};
+    main{}
+}

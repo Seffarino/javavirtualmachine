@@ -1,0 +1,17 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des tableaux	*/
+/************************/
+
+class arrayCond {
+
+	main {
+        int t[1&&2];
+        int y[3||4];
+        int x[!1];
+        int a[5>5];
+        int b[7==8];
+        int c[true];
+        int d[false];
+	}
+}

@@ -1,0 +1,36 @@
+<Start>
+    <classe>
+        <ident>
+            lengthArray
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <tableau>
+                    <entier/>
+                    <ident>
+                        x
+                    </ident>
+                    <nbre>
+                        5
+                    </nbre>
+                </tableau>
+                <vars>
+                    <var>
+                        <entier/>
+                        <ident>
+                            z
+                        </ident>
+                        <longueur>
+                            <ident>
+                                x
+                            </ident>
+                        </longueur>
+                    </var>
+                    <vnil/>
+                </vars>
+            </vars>
+            <inil/>
+        </main>
+    </classe>
+</Start>

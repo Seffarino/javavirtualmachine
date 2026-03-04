@@ -1,0 +1,14 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des var	*/
+/************************/
+
+class varNotDeclared{
+
+
+	main {
+        int i;
+        boolean y;
+        final int a;
+	}
+}

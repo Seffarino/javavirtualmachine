@@ -1,0 +1,4 @@
+class affectation {
+    final int x = 1;
+    main{}
+}

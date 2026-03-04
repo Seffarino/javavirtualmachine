@@ -1,0 +1,6 @@
+class C {
+    boolean tab[4];
+    main{
+        tab[2]++;
+    }
+}

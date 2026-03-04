@@ -1,0 +1,11 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation des boucles */
+/****************************************/
+/* Test variable void -> ok
+*/
+class Test {
+    main {
+        void x = 4;
+    }
+}

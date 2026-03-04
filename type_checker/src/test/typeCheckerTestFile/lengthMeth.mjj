@@ -1,0 +1,7 @@
+class C {
+    int tab(){return 0;};
+    main{
+        int i = length(tab);
+    }
+
+}

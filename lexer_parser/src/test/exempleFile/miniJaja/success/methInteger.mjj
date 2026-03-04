@@ -1,0 +1,16 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation du type int */
+/****************************************/
+/* Test de la methode de type int
+*/
+
+class methInteger{ 
+
+    int test(){
+        return 5;
+    };
+    main {
+ 
+    }
+}

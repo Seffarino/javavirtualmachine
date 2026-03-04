@@ -1,0 +1,15 @@
+class C {
+    int i=1;
+    int j = 2;
+    main {
+        if(i>j){
+            i++;
+        }else{
+            j++;
+        };
+    }
+
+
+
+
+}

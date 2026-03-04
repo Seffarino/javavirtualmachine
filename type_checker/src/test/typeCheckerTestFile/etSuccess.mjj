@@ -1,0 +1,5 @@
+class C {
+    boolean b = (true&&false);
+    main{}
+
+}

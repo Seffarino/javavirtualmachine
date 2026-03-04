@@ -1,0 +1,10 @@
+1 init;
+2 push(true);
+3 push(true);
+4 and;
+5 new(class@i,booleen,var,0);
+6 push(0);
+7 swap;
+8 pop;
+9 pop;
+10 jcstop;

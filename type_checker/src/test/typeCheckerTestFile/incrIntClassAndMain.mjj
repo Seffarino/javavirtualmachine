@@ -1,0 +1,8 @@
+class C {
+    int i =0 ;
+    main {
+        int i = 0;
+        i++;
+    }
+
+}

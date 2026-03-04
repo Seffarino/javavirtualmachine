@@ -1,0 +1,8 @@
+class C {
+    main {
+        int i= 0;
+        if(true){
+
+        };
+    }
+}

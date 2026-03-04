@@ -1,0 +1,25 @@
+<Start>
+    <classe>
+        <ident>
+            arrayLength
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <tableau>
+                    <entier/>
+                    <ident>
+                        t
+                    </ident>
+                    <longueur>
+                        <ident>
+                            t
+                        </ident>
+                    </longueur>
+                </tableau>
+                <vnil/>
+            </vars>
+            <inil/>
+        </main>
+    </classe>
+</Start>

@@ -1,0 +1,5 @@
+class C {
+    int h = 5/2;
+    int j = 5/0;
+    main{}
+}

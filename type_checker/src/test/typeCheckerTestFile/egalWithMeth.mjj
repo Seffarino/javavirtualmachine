@@ -1,0 +1,6 @@
+class C {
+      boolean i(){return false;};
+      boolean b = (1==i);
+      main{}
+
+  }

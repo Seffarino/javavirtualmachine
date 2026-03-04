@@ -1,0 +1,10 @@
+class C {
+    int i(int i ,boolean j ){
+        i++;
+        return i;
+    };
+    main{
+        i(5,false);
+    }
+
+}

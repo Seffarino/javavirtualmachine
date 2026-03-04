@@ -1,0 +1,3 @@
+1 new(i,entier,meth,0);
+2 new(i,booleen,meth,0);
+3 new(i,void,meth,0);

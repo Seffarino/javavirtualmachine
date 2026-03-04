@@ -1,0 +1,16 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des attributs	*/
+/************************/
+
+class attrIntBool{
+    int x;
+    int y = 5;
+    boolean a = true;
+    boolean b;
+    int math = 54*82/2-5+4;
+    
+	main {
+
+	}
+}

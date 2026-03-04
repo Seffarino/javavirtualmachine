@@ -1,0 +1,9 @@
+class C {
+    int i = 0;
+    void replaceI(int j){
+        i = j;
+    };
+    main{
+        replaceI(4);
+    }
+}

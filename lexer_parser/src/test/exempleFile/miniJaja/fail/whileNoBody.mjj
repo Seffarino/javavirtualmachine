@@ -1,0 +1,12 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du while	*/
+/************************/
+
+class whileNoBody {
+
+	main {
+        while(true) ;
+
+	}
+}

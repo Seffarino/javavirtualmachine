@@ -1,0 +1,14 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du while	*/
+/************************/
+
+class whileEmptyCond {
+
+	main {
+        while(){
+
+        } ;
+
+	}
+}

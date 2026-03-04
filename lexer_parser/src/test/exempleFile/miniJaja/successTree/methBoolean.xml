@@ -1,0 +1,28 @@
+<Start>
+    <classe>
+        <ident>
+            methBoolean
+        </ident>
+        <decls>
+            <methode>
+                <bool/>
+                <ident>
+                    test
+                </ident>
+                <enil/>
+                <vnil/>
+                <instrs>
+                    <retour>
+                        <vrai/>
+                    </retour>
+                    <inil/>
+                </instrs>
+            </methode>
+            <vnil/>
+        </decls>
+        <main>
+            <vnil/>
+            <inil/>
+        </main>
+    </classe>
+</Start>

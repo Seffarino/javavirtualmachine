@@ -1,0 +1,15 @@
+1 init;
+2 push(w);
+3 new(class@main@i,entier,var,0);
+4 push(true);
+5 if(7);
+6 goto(9);
+7 push(1);
+8 store(class@main@i);
+9 load(class@main@i);
+10 write;
+11 push(0);
+12 swap;
+13 pop;
+14 pop;
+15 jcstop;

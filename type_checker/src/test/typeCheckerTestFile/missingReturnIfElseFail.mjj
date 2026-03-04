@@ -1,0 +1,10 @@
+class C {
+    int i(int i){
+        if(i>0){
+            return i;
+        }else{
+            i++;
+        };
+    };
+    main{}
+}

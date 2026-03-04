@@ -1,0 +1,11 @@
+1 push(x);
+2 load(x);
+3 mul;
+4 load(y);
+5 push(3);
+6 sub;
+7 push(3);
+8 div;
+9 add;
+10 newarray(x,entier);
+11 new(x,entier,var,0);

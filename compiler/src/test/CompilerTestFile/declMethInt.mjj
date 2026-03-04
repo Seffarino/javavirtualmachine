@@ -1,0 +1,8 @@
+class C {
+    int j = 0;
+    int stop(int i){
+        j = i;
+        return j;
+    };
+    main{}
+}

@@ -1,0 +1,8 @@
+class c {
+    final int c = 4;
+    main{
+        c=5;
+    }
+
+
+}

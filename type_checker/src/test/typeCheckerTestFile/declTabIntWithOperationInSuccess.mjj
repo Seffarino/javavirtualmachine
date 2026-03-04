@@ -1,0 +1,5 @@
+class C {
+    int t[2+2*4+8];
+    main {}
+
+}

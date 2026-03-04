@@ -1,0 +1,7 @@
+1 push(3);
+2 load(x);
+3 sup;
+4 load(bo);
+5 not;
+6 and;
+7 store(bo);

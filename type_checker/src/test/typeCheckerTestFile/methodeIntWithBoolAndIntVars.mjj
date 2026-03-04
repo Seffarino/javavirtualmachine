@@ -1,0 +1,9 @@
+class methode{
+    int f(int j){
+        int i;
+        boolean y;
+        return 1;
+    };
+    main{}
+
+}

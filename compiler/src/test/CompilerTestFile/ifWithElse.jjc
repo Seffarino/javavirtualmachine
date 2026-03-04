@@ -1,0 +1,17 @@
+1 init;
+2 push(0);
+3 new(class@main@i,entier,var,0);
+4 load(class@main@i);
+5 push(0);
+6 sup;
+7 if(11);
+8 push(2);
+9 store(class@main@i);
+10 goto(13);
+11 push(4);
+12 store(class@main@i);
+13 push(0);
+14 swap;
+15 pop;
+16 pop;
+17 jcstop;

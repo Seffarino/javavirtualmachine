@@ -1,0 +1,21 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du while	*/
+/************************/
+
+class whileCond {
+
+	main {
+        int x = 0;
+        while(true){
+        };
+        while(false){  };
+        while(!x){ };
+        while(4&&5){ };
+        while(4||5){ };
+        while(4==5){ };
+        while(4>5){ };
+
+
+	}
+}

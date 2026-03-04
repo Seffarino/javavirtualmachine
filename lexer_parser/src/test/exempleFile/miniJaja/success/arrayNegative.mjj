@@ -1,0 +1,12 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des tableaux	*/
+/************************/
+
+class arrayNegative {
+
+	main {
+        int t[-16];
+
+	}
+}

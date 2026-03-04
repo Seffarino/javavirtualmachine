@@ -1,0 +1,32 @@
+class renommage {
+
+	int l = 0;
+	int fa = 12;
+
+
+	int g(int x) {
+		return fa;
+	};
+
+	int f2(int x) {
+	int fa = 1;
+		return fa+g(x);
+	};
+
+	int f(int fa) {
+	return g(10);
+	};
+
+	void pause() {
+	};
+
+	main {
+		int x = f(1)+l;
+		writeln(x);
+		writeln(fa);
+		pause();
+		x = f2(1);
+		writeln(x);
+		pause();
+	}
+}

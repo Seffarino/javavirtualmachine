@@ -1,0 +1,170 @@
+options {
+    MULTI=true;
+    NODE_DEFAULT_VOID=true;
+    VISITOR=true;
+    NODE_PREFIX = "ASTMjj";
+    STATIC = false;
+    KEEP_LINE_COLUMN = true;
+    TRACK_TOKENS = true;
+}
+
+PARSER_BEGIN(MiniJajaAnalyser)
+
+package fr.ufrst.m1info.comp5.minijaja;
+import java.io.FileInputStream;import java.io.FileNotFoundException;
+
+public class MiniJajaAnalyser {
+    static public ASTMjjStart parseFromFile(String file) throws FileNotFoundException, ParseException{
+        FileInputStream inputStream = new FileInputStream(file);
+        MiniJajaAnalyser t = new MiniJajaAnalyser(inputStream);
+        return t.B();
+    }
+
+    static public ASTMjjStart parseFromString(String str) throws ParseException {
+        MiniJajaAnalyser t = new MiniJajaAnalyser(new java.io.StringReader(str));
+        return t.B();
+    }
+  }
+
+  
+PARSER_END(MiniJajaAnalyser)
+
+SKIP:  { " " | "\t" | "\n" | "\r" | <"//" (~["\n", "\r"])*> | <"/*" ( ~[] | "\n" )* "*/" >}
+TOKEN: { 
+    "class" |
+    "main" |
+    "final" |
+    "return" |
+    "write" |
+    "writeln" |
+    "else" |
+    "while" |
+    "void" |
+    "int" |
+    "boolean" |
+    "length" |
+    "if" |
+    "{" |
+    "}" |
+    "(" |
+    ")" |
+    ";" |
+    "," |
+    "=" |
+    "==" |
+    "!" |
+    "[" |
+    "]" |
+    "+=" |
+    "++" |
+    "&&" |
+    "||" |
+    ">" |
+    "+" |
+    "-" |
+    "*" |
+    "/" |
+    < TRUE : "true" > |
+    < FALSE : "false" > |
+    < NUMBER : (["0"-"9"])+ ("." (["0"-"9"])+)? > |
+    < IDENT : ["a"-"z", "A"-"Z", "à"-"ö", "ô"-"ÿ"](["a"-"z", "A"-"Z", "0"-"9", "_", "à"-"ö", "ô"-"ÿ"])* > |
+    < STRING : "\"" ( ~["\""] )* "\"" >
+}
+
+ASTMjjStart B()#Start : {} { CLASS() { return jjtThis; }}
+void CLASS() #classe: {} {"class" IDENT() "{" DECLS() METHMAIN() "}"}
+void IDENT() #ident: {Token token;} {token=<IDENT> { jjtThis.jjtSetValue(token.image); }}
+
+void DECLS(): {} { DECL() ";" DECLS() #decls(2) | VNIL()}
+
+
+void DECL(): {} {
+    TYPEMETH() IDENT() (
+        "(" ENTETES() ")" "{" VARS() INSTRS() "}" #methode(5)
+        |
+        "[" EXP() "]" #tableau(3) | VEXP() #var(3)
+    )
+    |
+    "final" TYPE() IDENT() VEXP() #cst(3)
+}
+
+void VARS(): {} { VAR() ";" VARS() #vars(2) | VNIL()}
+
+
+void VAR(): {}
+{
+  TYPEMETH() IDENT() (
+    "[" EXP() "]" #tableau(3)
+    | VEXP() #var(3)
+  )
+  |
+  "final" TYPE() IDENT() VEXP() #cst(3)
+}
+
+
+
+void VEXP(): {} {"=" EXP() | OMEGA()}
+
+void METHMAIN() #main: {} {"main" "{" VARS() INSTRS() "}" }
+
+
+void ENTETES(): {} {ENTETE() ("," ENTETES() | ENIL() ) #entetes(2)| ENIL()}
+
+
+void ENTETE() #entete: {} {TYPE() IDENT()}
+void INSTRS(): {} {INSTR() ";" INSTRS() #instrs(2) | INIL()}
+
+void INSTR(): {} {
+    IDENT1() ("=" EXP() #affectation(2) | "+=" EXP() #somme(2) | "++" #increment(1) | "(" LISTEXP() ")" #appelI(2)) |
+    "return" EXP() #retour(1) |
+    "write" "(" (IDENT() | CHAINE()) ")" #ecrire(1) |
+    "writeln" "(" (IDENT() | CHAINE()) ")" #ecrireln(1) |
+    "if" "(" EXP() ")" "{" INSTRS() "}" ("else" "{" INSTRS() "}" | INIL()) #si(3) |
+    "while" "(" EXP() ")" "{" INSTRS() "}" #tantque(2)
+}
+
+void CHAINE() #chaine: {} {<STRING> { jjtThis.jjtSetValue(token.image); }}
+
+
+void LISTEXP(): {} {(EXP() ("," LISTEXP() | EXNIL())) #listexp(2) | EXNIL()}
+
+
+void EXP(): {} { ("!" EXP1() #non(1) | EXP1()) ("&&" EXP1() #et(2) | "||" EXP1() #ou(2))* }
+
+void EXP1(): {} { EXP2() ("==" EXP2() #egal(2) | ">" EXP2() #sup(2))* }
+
+void EXP2(): {} { (TERME() | "-" TERME() #moins(1)) ("+" TERME() #addition(2) | "-" TERME() #soustraction(2))* }
+
+void TERME(): {} { FACT() ("*" FACT() #mult(2) | "/" FACT() #div(2))* }
+
+void FACT(): {} {
+    IDENT() ("(" LISTEXP() ")" #appelE(2) | "[" EXP() "]" #tab(2))?   |
+    "length" "(" IDENT() ")" #longueur(1) |
+    <TRUE> #vrai | <FALSE> #faux  | NBRE() | "(" EXP() ")"
+}
+
+void IDENT1(): {} { IDENT() ("[" EXP() "]" #tab(2))?}
+
+
+void TYPEMETH(): {} {"void" #rien | TYPE()}
+void TYPE(): {} {"int" #entier | "boolean" #bool}
+
+void NBRE() #nbre: {int x;} {<NUMBER> {
+                                     try {
+                                         jjtThis.jjtSetValue(Integer.parseInt(token.image));
+                                     } catch (NumberFormatException e) {
+                                         // Handle the case where the number is larger than Integer.MAX_VALUE
+                                         // You can set a default value, throw an exception, or take other appropriate action
+                                         System.err.println("Number format error: " + token.image + " is too large to be an integer.");
+                                         // For example, setting to Integer.MAX_VALUE
+                                         jjtThis.jjtSetValue(Integer.MAX_VALUE);
+                                     }
+                                 }}
+
+void VNIL() #vnil: { } {{}}
+void ENIL() #enil: { } {{}}
+void INIL() #inil: { } {{}}
+void EXNIL() #exnil: { } {{}}
+void OMEGA() #omega: { } {{}}
+
+

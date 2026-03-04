@@ -1,0 +1,11 @@
+class C {
+    void f(int i,boolean j){
+        writeln(i);
+        writeln(j);
+    };
+    main{
+        int k = 10;
+        boolean z = false;
+        f(k,z);
+    }
+}

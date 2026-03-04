@@ -1,0 +1,14 @@
+1 load(bo);
+2 not;
+3 if(4);
+4 goto(14);
+5 push(2);
+6 load(x);
+7 mul;
+8 load(y);
+9 push(3);
+10 sub;
+11 push(3);
+12 div;
+13 add;
+14 store(x);

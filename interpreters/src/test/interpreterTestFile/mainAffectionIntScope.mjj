@@ -1,0 +1,16 @@
+class C {
+        int i = 2;
+        int j = 2;
+        int getI(){
+            return i;
+        };
+    main {
+        int i = 3;
+        int k = getI();
+        i = 5;
+        j = 25;
+        writeln(i);
+        writeln(k);
+        writeln(j);
+    }
+}

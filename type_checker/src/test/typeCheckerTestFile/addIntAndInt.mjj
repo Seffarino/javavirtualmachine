@@ -1,0 +1,5 @@
+class add {
+    int i = 5+5;
+    main{}
+
+}

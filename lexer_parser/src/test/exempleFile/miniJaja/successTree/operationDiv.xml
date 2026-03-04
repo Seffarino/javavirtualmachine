@@ -1,0 +1,28 @@
+<Start>
+    <classe>
+        <ident>
+            operationDiv
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <var>
+                    <entier/>
+                    <ident>
+                        x
+                    </ident>
+                    <div>
+                        <nbre>
+                            10
+                        </nbre>
+                        <nbre>
+                            2
+                        </nbre>
+                    </div>
+                </var>
+                <vnil/>
+            </vars>
+            <inil/>
+        </main>
+    </classe>
+</Start>

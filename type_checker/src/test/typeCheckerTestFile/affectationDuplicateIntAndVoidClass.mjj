@@ -1,0 +1,6 @@
+class affectation{
+    void x;
+    int x;
+    int x;
+    main {}
+}

@@ -1,0 +1,8 @@
+class C {
+    int tab[2];
+    main {
+        tab[2]=1;
+        tab[2]++;
+        tab[2]+=2;
+    }
+}

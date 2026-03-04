@@ -1,0 +1,12 @@
+1 init;
+2 push(1);
+3 new(i,entier,var,0);
+4 push(2);
+5 new(y,entier,var,0);
+6 push(3);
+7 new(k,entier,var,0);
+8 push(4);
+9 inc(i);
+10 load(i);
+11 writeln;
+12 jcstop;

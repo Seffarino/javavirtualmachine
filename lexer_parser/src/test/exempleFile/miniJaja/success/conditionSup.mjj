@@ -1,0 +1,19 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation des conditions */
+/****************************************/
+/* Test de la superiorite
+*/
+
+class conditionEt{ 
+
+    
+    main {
+
+        int x = 5;
+        int y = 6;
+        if(x > y){
+
+       };
+    }
+}

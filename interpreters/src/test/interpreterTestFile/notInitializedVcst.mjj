@@ -1,0 +1,14 @@
+class C {
+    main{
+        int i;
+        final int j;
+        final boolean k;
+        boolean b = (1==j);
+        b = !k;
+        b = k;
+        i = j+1;
+        i = j - 1;
+        i = j*1;
+        i = j/1;
+    }
+}

@@ -1,0 +1,9 @@
+class C {
+    boolean i = true;
+    boolean j = false;
+    main{
+        writeln(i);
+        writeln(j);
+
+    }
+}

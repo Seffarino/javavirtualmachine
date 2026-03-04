@@ -1,0 +1,13 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du length	*/
+/************************/
+
+class lengthArray {
+
+	main {
+        int x[5];
+        int z = length(x);
+
+	}
+}

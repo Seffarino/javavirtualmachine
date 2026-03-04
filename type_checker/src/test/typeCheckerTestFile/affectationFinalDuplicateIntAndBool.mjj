@@ -1,0 +1,5 @@
+class affectation{
+    final int x;
+    final boolean x;
+    main {}
+}

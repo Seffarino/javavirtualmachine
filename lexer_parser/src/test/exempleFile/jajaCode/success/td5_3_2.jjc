@@ -1,0 +1,11 @@
+1 load(x);
+2 push(3);
+3 sup;
+4 if(9);
+5 load(y);
+6 push(3);
+7 sub;
+8 store(x);
+9 goto(11);
+10 push(3);
+11 store(x);

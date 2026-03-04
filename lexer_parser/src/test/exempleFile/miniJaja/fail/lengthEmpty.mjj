@@ -1,0 +1,12 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du length	*/
+/************************/
+
+class lengthEmpty {
+
+	main {
+        int a = length();
+
+	}
+}

@@ -1,0 +1,6 @@
+class C {
+    final boolean j;
+    main{
+        j=(1>0);
+    }
+}

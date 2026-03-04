@@ -1,0 +1,16 @@
+1 init;
+2 push(5);
+3 new(class@f,void,meth,0);
+4 goto(10);
+5 push("test");
+6 write;
+7 push(0);
+8 swap;
+9 return;
+10 invoke(class@f);
+11 pop;
+12 push(0);
+13 swap;
+14 pop;
+15 pop;
+16 jcstop;

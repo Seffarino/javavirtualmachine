@@ -1,0 +1,5 @@
+class C {
+    final int i = 0;
+    final boolean j = false;
+    main{}
+}

@@ -1,0 +1,12 @@
+class C {
+    int i2;
+    void f(int i){
+        i2=i;
+        write(i2);
+    };
+    main{
+        int j = 5;
+        f(j);
+    }
+
+}

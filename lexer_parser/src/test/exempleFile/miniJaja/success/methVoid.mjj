@@ -1,0 +1,15 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des methodes	*/
+/************************/
+
+class methVoid{
+
+    void myMeth(int x, boolean y){
+        int a = 5;
+    };
+
+	main {
+
+	}
+}

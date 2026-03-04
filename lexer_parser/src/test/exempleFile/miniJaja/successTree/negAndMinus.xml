@@ -1,0 +1,30 @@
+<Start>
+    <classe>
+        <ident>
+            test
+        </ident>
+        <decls>
+            <var>
+                <entier/>
+                <ident>
+                    a
+                </ident>
+                <soustraction>
+                    <moins>
+                        <nbre>
+                            1
+                        </nbre>
+                    </moins>
+                    <nbre>
+                        1
+                    </nbre>
+                </soustraction>
+            </var>
+            <vnil/>
+        </decls>
+        <main>
+            <vnil/>
+            <inil/>
+        </main>
+    </classe>
+</Start>

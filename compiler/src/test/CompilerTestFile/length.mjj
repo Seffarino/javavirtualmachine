@@ -1,0 +1,5 @@
+class C {
+    int i[5];
+    int j = length(i);
+    main{}
+}

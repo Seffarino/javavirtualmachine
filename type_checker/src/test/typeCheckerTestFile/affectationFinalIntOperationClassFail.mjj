@@ -1,0 +1,5 @@
+class add {
+    final int i = true*5+(2+2)/24-22+45;
+    main{}
+
+}

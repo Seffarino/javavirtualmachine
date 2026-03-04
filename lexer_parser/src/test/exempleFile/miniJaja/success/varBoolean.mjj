@@ -1,0 +1,14 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation du type booleen */
+/****************************************/
+/* Test de la variable de type booleen
+*/
+
+class varBoolean{ 
+
+    
+    main {
+       boolean x = true; 
+    }
+}

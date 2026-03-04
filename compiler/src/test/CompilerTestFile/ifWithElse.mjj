@@ -1,0 +1,11 @@
+class C {
+
+    main{
+        int i = 0;
+        if(i>0){
+            i=4;
+        }else{
+            i=2;
+        };
+    }
+}

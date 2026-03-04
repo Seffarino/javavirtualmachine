@@ -1,0 +1,17 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation d'un mauvais type */
+/****************************************/
+/* Test d'un mauvais type --> doit echouer
+*/
+
+class methTypeDouble{ 
+
+    double essai(){
+        return 5;
+    };
+    
+    main {
+        
+    }
+}

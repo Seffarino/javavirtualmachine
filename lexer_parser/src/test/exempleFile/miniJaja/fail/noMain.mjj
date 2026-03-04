@@ -1,0 +1,4 @@
+class noMain {
+    int x = 1;
+
+}

@@ -1,0 +1,25 @@
+<Start>
+    <classe>
+        <ident>
+            lengthArray
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <var>
+                    <rien/>
+                    <ident>
+                        e
+                    </ident>
+                    <longueur>
+                        <ident>
+                            lengthArray
+                        </ident>
+                    </longueur>
+                </var>
+                <vnil/>
+            </vars>
+            <inil/>
+        </main>
+    </classe>
+</Start>

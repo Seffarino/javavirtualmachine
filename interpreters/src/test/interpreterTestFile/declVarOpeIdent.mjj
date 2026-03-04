@@ -1,0 +1,48 @@
+class C {
+    int deux = 2;
+    int un = 1;
+    boolean iTrue = deux > un;
+    boolean iFalse = un > deux;
+
+    boolean jTrue = deux == deux;
+    boolean jFalse = deux == -un;
+
+    boolean kTrue1 = (deux>un || un>deux);
+    boolean kTrue2 = (un>deux || deux>un);
+    boolean kFalse = (un>deux || deux>3);
+
+    boolean hTrue = ( deux>un && 3>deux);
+    boolean hFalse1= ( deux>un && un>deux);
+    boolean hFalse2= ( un>deux && deux>un);
+
+    boolean lTrue = !(un > deux);
+    boolean lFalse=  !(deux > un);
+
+    main{
+            write(iTrue);
+            write(",");
+            write(iFalse);
+            write(",");
+            write(jTrue);
+            write(",");
+            write(jFalse);
+            write(",");
+            write(kTrue1);
+            write(",");
+            write(kTrue2);
+            write(",");
+            write(kFalse);
+            write(",");
+            write(hTrue);
+            write(",");
+            write(hFalse1);
+            write(",");
+            write(hFalse2);
+            write(",");
+            write(lTrue);
+            write(",");
+            write(lFalse);
+    }
+
+
+}

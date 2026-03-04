@@ -1,0 +1,6 @@
+class C {
+    int tab[5];
+    main{
+        tab[0]=4;
+    }
+}

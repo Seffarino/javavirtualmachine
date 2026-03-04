@@ -1,0 +1,21 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation des boucles */
+/****************************************/
+/* Test du if
+*/
+
+class conditionEt{ 
+
+    
+    main {
+
+        int x = 5;
+        int y = 6;
+        if(x > y){
+
+        } else {
+
+        };
+    }
+}

@@ -1,0 +1,13 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du write/writeln	*/
+/************************/
+
+class writeArray {
+
+	main {
+        write(x[]);
+        writeln(x[]);
+
+	}
+}

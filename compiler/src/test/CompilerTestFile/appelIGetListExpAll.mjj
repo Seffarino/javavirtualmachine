@@ -1,0 +1,27 @@
+class C {
+    int i = 0;
+    boolean k = true;
+    int t[5];
+    void replaceIK(int j,boolean l){
+        i = j;
+        k = l;
+    };
+    int returnInt(){
+        return 1;
+    };
+    boolean returnBool(){
+        return true;
+    };
+    main{
+        replaceIK(4,true);
+        replaceIK(3,false);
+        replaceIK(-5,!true);
+        replaceIK((4+5),(true&&true));
+        replaceIK((4-5),(true||true));
+        replaceIK((4/2),(1==1));
+        replaceIK((4*2),(2>1));
+        replaceIK(length(t),true);
+        replaceIK(i,k);
+        replaceIK(returnInt(),returnBool());
+    }
+}

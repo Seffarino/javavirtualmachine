@@ -1,0 +1,8 @@
+class c {
+    int f(){return 0;};
+    int fi(){
+        boolean b = (1==f);
+        return 0;
+    };
+    main{}
+}

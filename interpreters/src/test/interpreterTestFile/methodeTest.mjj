@@ -1,0 +1,8 @@
+class C {
+    void f(){
+        write("test");
+    };
+    main{
+        f();
+    }
+}

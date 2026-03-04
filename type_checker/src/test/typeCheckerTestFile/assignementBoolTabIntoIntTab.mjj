@@ -1,0 +1,7 @@
+class C {
+    boolean i[4];
+    int j[2];
+    main{
+        j=i;
+    }
+}

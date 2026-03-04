@@ -1,0 +1,7 @@
+class C {
+    int j = 0;
+    void stop(int i){
+        j = i;
+    };
+    main{}
+}

@@ -1,0 +1,8 @@
+class methode{
+
+    int f(int i){
+        int i;
+        return 0;
+    };
+    main{}
+}

@@ -1,0 +1,7 @@
+class C {
+    int i = 0;
+    main {
+        int j=0;
+        return j;
+    }
+}

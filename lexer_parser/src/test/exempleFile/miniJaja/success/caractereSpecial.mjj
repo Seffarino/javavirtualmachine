@@ -1,0 +1,14 @@
+/****************************************/
+/* Programme MiniJaja			*/
+/* Validation des caracteres speciaux */
+/****************************************/
+/* Test des accents --> doit echouer
+*/
+
+class caractereSpecial{ 
+
+    
+    main {
+        int é = 5;
+    }
+}

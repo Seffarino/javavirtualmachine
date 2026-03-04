@@ -1,0 +1,11 @@
+class C {
+    int i = 0;
+    int j = 5;
+    main {
+        while(j>i){
+            i++;
+        };
+    }
+
+
+}

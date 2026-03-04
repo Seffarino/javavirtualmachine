@@ -1,0 +1,32 @@
+<Start>
+    <classe>
+        <ident>
+            conditionNon
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <var>
+                    <bool/>
+                    <ident>
+                        test
+                    </ident>
+                    <vrai/>
+                </var>
+                <vnil/>
+            </vars>
+            <instrs>
+                <si>
+                    <non>
+                        <ident>
+                            test
+                        </ident>
+                    </non>
+                    <inil/>
+                    <inil/>
+                </si>
+                <inil/>
+            </instrs>
+        </main>
+    </classe>
+</Start>

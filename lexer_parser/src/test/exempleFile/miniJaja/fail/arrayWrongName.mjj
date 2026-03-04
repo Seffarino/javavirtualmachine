@@ -1,0 +1,12 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation des tableaux	*/
+/************************/
+
+class arrayWrongName {
+
+	main {
+        int 8[16];
+
+	}
+}

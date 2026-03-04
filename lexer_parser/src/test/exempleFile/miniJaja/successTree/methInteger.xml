@@ -1,0 +1,30 @@
+<Start>
+    <classe>
+        <ident>
+            methInteger
+        </ident>
+        <decls>
+            <methode>
+                <entier/>
+                <ident>
+                    test
+                </ident>
+                <enil/>
+                <vnil/>
+                <instrs>
+                    <retour>
+                        <nbre>
+                            5
+                        </nbre>
+                    </retour>
+                    <inil/>
+                </instrs>
+            </methode>
+            <vnil/>
+        </decls>
+        <main>
+            <vnil/>
+            <inil/>
+        </main>
+    </classe>
+</Start>

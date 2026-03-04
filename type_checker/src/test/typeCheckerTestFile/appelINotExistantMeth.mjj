@@ -1,0 +1,5 @@
+class C{
+    main{
+        i(5,false,5,false,false);
+    }
+}

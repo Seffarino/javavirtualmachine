@@ -1,0 +1,11 @@
+class functionNotNamed {
+    int x = 0;
+
+    int (int x){
+        return x+34;
+    }
+
+    main{
+        
+    }
+}

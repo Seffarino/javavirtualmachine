@@ -1,0 +1,19 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du while	*/
+/************************/
+
+class whileInWhile {
+
+	main {
+        int x = 0;
+        while(true){
+          while(false){
+            while(x==0){
+                return x;
+            };
+          };
+        };
+
+	}
+}

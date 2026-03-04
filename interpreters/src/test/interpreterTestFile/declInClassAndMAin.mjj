@@ -1,0 +1,12 @@
+class C {
+    int i=0;
+    int f(){
+        return i;
+    };
+    main{
+        int i = 1;
+        int j = f();
+        writeln(i);
+        writeln(j);
+    }
+}

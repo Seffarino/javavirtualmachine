@@ -1,0 +1,7 @@
+class C {
+    boolean tab[4];
+    int i=0;
+    main {
+        i+=tab[2];
+    }
+}

@@ -1,0 +1,14 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du write/writeln	*/
+/************************/
+
+class writeInt {
+
+	main {
+        int x = 5;
+        write(x);
+        writeln(x);
+
+	}
+}

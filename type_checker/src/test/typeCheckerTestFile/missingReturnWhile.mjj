@@ -1,0 +1,8 @@
+class C {
+    int i(int i){
+        while(i>0){
+            return i;
+        };
+    };
+    main{}
+}

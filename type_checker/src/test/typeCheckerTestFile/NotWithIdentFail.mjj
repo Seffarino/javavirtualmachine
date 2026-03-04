@@ -1,0 +1,6 @@
+class C {
+
+    int j = 5;
+    boolean i = (!j);
+    main{}
+}

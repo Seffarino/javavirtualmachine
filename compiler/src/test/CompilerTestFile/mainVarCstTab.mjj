@@ -1,0 +1,10 @@
+class C {
+    main{
+        int i[5];
+        boolean j[2];
+        int i = 0;
+        boolean j = false;
+        final int i = 0;
+        final boolean j = false;
+    }
+}

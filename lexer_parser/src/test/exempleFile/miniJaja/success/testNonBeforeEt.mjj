@@ -1,0 +1,6 @@
+class test{
+
+    boolean t = !true && false;
+
+    main{}
+}

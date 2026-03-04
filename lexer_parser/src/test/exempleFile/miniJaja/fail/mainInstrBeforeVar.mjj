@@ -1,0 +1,17 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du main	*/
+/************************/
+
+class mainInstrBeforeVar{
+
+
+	main {
+        x++;
+        y = false; 
+        int a = 5;
+        x++;
+        y = false; 
+        int b = 6;
+	}
+}

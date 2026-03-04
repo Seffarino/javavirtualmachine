@@ -1,0 +1,54 @@
+class tribulles
+{
+    int tab[10];
+
+    void pause(){
+    };
+
+    void afficher(int taille) {
+        int i = 0;
+        int a = 0;
+        while(taille > i) {
+           a = tab[i];
+           writeln(a);
+           i++;
+        };
+    };
+
+    void tri(){
+        int i;
+        int temp;
+        boolean modifs=true;
+
+        while (modifs){
+            i=0;
+            modifs=false;
+            while (9>i) {
+                if (tab[i]>tab[i+1]){
+                    temp=tab[i];
+                    tab[i]=tab[i+1];
+                    tab[i+1]=temp;
+                    modifs=true;
+                };
+                i++;
+            };
+        };
+    };
+
+
+    main {
+        tab[0]=15;
+        tab[1]=8;
+        tab[2]=3;
+        tab[3]=17;
+        tab[4]=11;
+        tab[5]=6;
+        tab[6]=30;
+        tab[7]=12;
+        tab[8]=16;
+        tab[9]=15;
+        tri();
+        afficher(10);
+        pause();
+    }
+}

@@ -1,0 +1,15 @@
+class {
+    int x = 1;
+
+
+    int y = 2;
+
+    int add(int x1, int y1){
+        return x1 + y1;
+    }
+
+    main{
+        int z = add(x, 1);
+    }
+    
+}

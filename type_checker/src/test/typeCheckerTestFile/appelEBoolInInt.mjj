@@ -1,0 +1,8 @@
+class C {
+    int i = f(true);
+
+    boolean f(boolean i){
+        return i;
+    };
+    main{}
+}

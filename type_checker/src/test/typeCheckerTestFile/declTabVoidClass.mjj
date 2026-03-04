@@ -1,0 +1,4 @@
+class affectation {
+    void t[5];
+    main{}
+}

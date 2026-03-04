@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="primaryStage" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ufrst.m1info.comp5.gui.GuiController">
+   <top>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+              <menus>
+                <Menu mnemonicParsing="false" text="Fichier">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#onOpenButtonClick" text="Ouvrir" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#onSaveButtonClick" text="Enregistrer" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Compiler">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onCompileButtonClick" text="Compiler" />
+                     </items></Menu>
+                  <Menu mnemonicParsing="false" text="Exécuter">
+                      <items>
+                          <MenuItem mnemonicParsing="false" onAction="#onExecuteMJJButtonClick" text="Exécuter MiniJaja" />
+                          <MenuItem mnemonicParsing="false" onAction="#onExecuteJJCButtonClick" text="Exécuter JajaCode" />
+                      </items></Menu>
+                <Menu mnemonicParsing="false" text="Executer le pas à pas">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#onDebugButtonClick" text="Pas à pas MiniJaja" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#onNextDebugButtonClick" text="Pas MiniJaja suivant" />
+                         <SeparatorMenuItem mnemonicParsing="false" />
+                         <MenuItem mnemonicParsing="false" onAction="#onDebugJajaButtonClick" text="Pas à pas JajaCode" />
+                         <SeparatorMenuItem mnemonicParsing="false" />
+                         <MenuItem mnemonicParsing="false" onAction="#onNextJajaDebugButtonClick" text="Pas JajaCode suivant" />
+                     </items></Menu>
+                  <Menu mnemonicParsing="false" text="Executer les points d'arrêt">
+                      <MenuItem mnemonicParsing="false" onAction="#onDebugBreakPointButtonClick" text="Point d'arrêt MiniJaja" />
+                      <SeparatorMenuItem mnemonicParsing="false" />
+                      <MenuItem mnemonicParsing="false" onAction="#onNextBrekpointClick" text="Point d'arrêt MiniJaja suivant" />
+                      <SeparatorMenuItem mnemonicParsing="false" />
+                      <MenuItem mnemonicParsing="false" onAction="#onDebugBreakPointButtonClickJjc" text="Point d'arrêt JajaCode" />
+                      <SeparatorMenuItem mnemonicParsing="false" />
+                      <MenuItem mnemonicParsing="false" onAction="#onNextBreakpointClickJJC" text="Point d'arrêt JajaCode suivant" />
+
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="ligne" text="Ligne :" />
+            <Label fx:id="colonne" text="Colonne :">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+        <items>
+            <SplitPane dividerPositions="0.5" prefHeight="160.0" prefWidth="200.0">
+               <items>
+                  <BorderPane>
+                     <center>
+                        <SplitPane dividerPositions="0.1" prefHeight="160.0" prefWidth="200.0">
+                           <items>
+                              <TextArea fx:id="lineCount" maxWidth="-Infinity" minWidth="-Infinity" onMouseClicked="#onDebugPoint" prefWidth="60.0" />
+                              <TextArea fx:id="codeInput" onKeyPressed="#onCountLine" prefHeight="200.0" prefWidth="200.0" />
+                           </items>
+                        </SplitPane>
+                     </center>
+                     <top>
+                        <Label text="MiniJaja" BorderPane.alignment="CENTER" />
+                     </top>
+                  </BorderPane>
+                  <BorderPane>
+                     <center>
+                        <SplitPane dividerPositions="0.5">
+                           <items>
+                              <TextArea fx:id="lineCountjjc" maxWidth="-Infinity" minWidth="-Infinity" onMouseClicked="#onDebugPointJjc" prefWidth="60.0" />
+                              <TextArea fx:id="jajacodeInput" onKeyPressed="#onCountLineJjc" prefHeight="200.0" prefWidth="200.0" />
+                           </items>
+                        </SplitPane>
+                     </center>
+                     <top>
+                        <Label text="JajaCode" BorderPane.alignment="CENTER" />
+                     </top>
+                  </BorderPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.5, 0.5" prefHeight="160.0" prefWidth="200.0">
+              <items>
+                  <BorderPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="250.0">
+                     <top>
+                        <Label text="Tas" BorderPane.alignment="CENTER" />
+                     </top>
+                     <center>
+                        <TextArea fx:id="tas" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+                  <BorderPane minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+                     <top>
+                        <Label text="Pile" BorderPane.alignment="CENTER" />
+                     </top>
+                     <center>
+                        <TextArea fx:id="pile" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+                  <TextArea fx:id="logError" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" />
+              </items>
+            </SplitPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,16 @@
+/************************/
+/* Programme MiniJaja	*/
+/* Validation du while	*/
+/************************/
+
+class whileMath {
+
+	main {
+        int x = 0;
+        while(x+5/2*27){ };
+        while(-2){  };
+        while(12/7){ };
+
+
+	}
+}

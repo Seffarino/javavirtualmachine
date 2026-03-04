@@ -1,0 +1,21 @@
+<Start>
+    <classe>
+        <ident>
+            varBoolean
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <var>
+                    <bool/>
+                    <ident>
+                        x
+                    </ident>
+                    <vrai/>
+                </var>
+                <vnil/>
+            </vars>
+            <inil/>
+        </main>
+    </classe>
+</Start>

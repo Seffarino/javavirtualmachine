@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>fr.ufrst.m1info.comp5</groupId>
+    <artifactId>JajaVirtualMachine</artifactId>
+    <version>2.2-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+    <modules>
+        <module>lexer_parser</module>
+        <module>gui</module>
+        <module>Memory</module>
+        <module>type_checker</module>
+        <module>interpreters</module>
+        <module>compiler</module>
+    </modules>
+    <properties>
+        <maven.compiler.release>17</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <sonar.projectName>ProjetVMGroup5</sonar.projectName>
+        <sonar.coverage.jacoco.xmlReportPaths>
+            ${project.basedir}/target/site/jacoco/jacoco.xml
+        </sonar.coverage.jacoco.xmlReportPaths>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-deptinfo</id>
+            <url>https://disc.univ-fcomte.fr/cr700-nexus/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-deptinfo-snapshots</id>
+            <url>https://disc.univ-fcomte.fr/cr700-nexus/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>fr.ufrst.m1info.comp5</groupId>
+                <artifactId>Memory</artifactId>
+                <version>2.2-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>fr.ufrst.m1info.comp5</groupId>
+                <artifactId>interpreters</artifactId>
+                <version>2.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>fr.ufrst.m1info.comp5</groupId>
+                <artifactId>compiler</artifactId>
+                <version>2.2-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>fr.ufrst.m1info.comp5</groupId>
+                <artifactId>lexer_parser</artifactId>
+                <version>2.2-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>fr.ufrst.m1info.comp5</groupId>
+                <artifactId>gui</artifactId>
+                <version>1.10-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>fr.ufrst.m1info.comp5</groupId>
+                <artifactId>type_checker</artifactId>
+                <version>2.2-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <scm>
+        <developerConnection>scm:git:https://disc.univ-fcomte.fr/cr700-gitlab/tgraber/jajavirtualmachine.git </developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>3.0.1 </version>
+                </plugin>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.9.0.2155</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>0.8.7</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.11.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

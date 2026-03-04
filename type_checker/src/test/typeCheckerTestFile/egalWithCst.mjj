@@ -1,0 +1,6 @@
+class C {
+      final int i = 1;
+      boolean b = (1==i);
+      main{}
+
+  }

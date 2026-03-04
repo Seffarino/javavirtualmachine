@@ -1,0 +1,6 @@
+class affectation {
+
+    boolean i = 5;
+    main{}
+
+}

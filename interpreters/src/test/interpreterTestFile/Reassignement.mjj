@@ -1,0 +1,16 @@
+class test{
+    final int z = 0;
+    main {
+        int i = 0;
+        int j = 0;
+        final int res;
+        if(i>j){
+            res = 0;
+        }else{
+            res = 1;
+        };
+        res = 2;
+        z = 3;
+        write(res);
+    }
+}

@@ -1,0 +1,30 @@
+<Start>
+    <classe>
+        <ident>
+            incrementation
+        </ident>
+        <vnil/>
+        <main>
+            <vars>
+                <var>
+                    <entier/>
+                    <ident>
+                        x
+                    </ident>
+                    <nbre>
+                        5
+                    </nbre>
+                </var>
+                <vnil/>
+            </vars>
+            <instrs>
+                <increment>
+                    <ident>
+                        x
+                    </ident>
+                </increment>
+                <inil/>
+            </instrs>
+        </main>
+    </classe>
+</Start>
