@@ -52,7 +52,7 @@ git clone https://github.com/Seffarino/javavirtualmachine.git
 cd javavirtualmachine
 ``
 Build the project with Maven:
-``
+```
 mvn clean install
 ```
 Run
