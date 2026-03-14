@@ -47,19 +47,20 @@ JavaFX
 Installation
 
 Clone the repository:
-
+``
 git clone https://github.com/Seffarino/javavirtualmachine.git
 cd javavirtualmachine
-
+``
 Build the project with Maven:
-
+``
 mvn clean install
+```
 Run
 
 To launch the generated .jar file with JavaFX:
-
+```
 java --module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml -jar comp5.jar
-
+```
 Replace /path/to/javafx/lib with the path to your local JavaFX installation.
 
 Purpose
